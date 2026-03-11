@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="24dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="64sp" />
+
+
+        <TextView
+            android:id="@+id/inputExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp"
+            android:text="0"
+            android:textColor="#BBBBBB"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
+
+
+        <Button style="@style/CalcButtonStyle" android:text="7" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="8" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="9" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="/" android:layout_columnWeight="1"/>
+
+
+        <Button style="@style/CalcButtonStyle" android:text="4" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="5" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="6" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="*" android:layout_columnWeight="1"/>
+
+
+        <Button style="@style/CalcButtonStyle" android:text="1" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="2" android:layout_columnWeight="1"/>
+        <Button style="@style/CalcButtonStyle" android:text="3" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="-" android:layout_columnWeight="1"/>
+
+
+        <Button style="@style/CalcButtonStyle" android:text="0" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="C" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="=" android:layout_columnWeight="1"/>
+        <Button style="@style/OpButtonStyle" android:text="+" android:layout_columnWeight="1"/>
+
+    </GridLayout>
+
+</LinearLayout>
